@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faqs.css">
+    <link rel="icon"  href="lowkey loan logo.jpeg">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="lowkey loan logo.jpeg" alt="LowKey Loans Logo" class="lowkeylogo">
+        </div>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('how to apply')"> How To Apply for a Loan</a></li>
+            <li><a href="#" onclick="showSection('about us')">About us</a></li>
+            <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+            <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>LowKey Loans</h1>
+</header>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+    <img src="fq.jpg" alt="FAQ Image" class="faq-image">
+    <input type="text" id="search-input" placeholder="Search FAQs..." onkeyup="searchFAQs()">
+    
+    <button class="accordion">What is the maximum period I can take the loan for? <span class="arrow">▼</span></button>
+    <div class="panel">
+      <p>The maximum period is one month. 30 days. We are a very short term lender. We do not go past the one month period with our loans.</p>
+    </div>
+
+    <button class="accordion">What items do you accept as collateral? <span class="arrow">▼</span></button>
+    <div class="panel">
+      <p>Because of our target market, students, we take phones and laptops as collateral.</p>
+    </div>
+
+    <button class="accordion">If you take these items, how will the students be able to study? <span class="arrow">▼</span></button>
+    <div class="panel">
+      <p>Our customer centred surveys uncovered the fact that students can do without their items only for a short period. It is because of this that we give only short term loans, to reflect the needs and capacity of our clients.</p>
+    </div>
+
+    <button class="accordion">My collateral has a little problem, can I use it to access a loan? <span class="arrow">▼</span></button>
+    <div class="panel">
+      <p>No. We only accept collateral in good condition for our loans.</p>
+    </div>
+
+    <button class="accordion">Can I just come to the office with my collateral for money? <span class="arrow">▼</span></button>
+    <div class="panel">
+      <p>No. You will be turned away. First, you send pictures of the item you intend to use as collateral to the WhatsApp number. The collateral is then assessed and approved. An appointment is then made for you to come on over to the office with a valid ID and the collateral for the money.</p>
+    </div>
+</div>
+
+<button id="back-to-top" onclick="scrollToTop()">Top</button>
+
+<footer>
+    <p>&copy; 2024 Loan App</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var acc = document.getElementsByClassName("accordion");
+        Array.from(acc).forEach(function(element) {
+            element.addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                var arrow = this.querySelector(".arrow");
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    arrow.textContent = "▼";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    arrow.textContent = "▲";
+                }
+            });
+        });
+    });
+
+    function searchFAQs() {
+        var input, filter, buttons, panels, i;
+        input = document.getElementById('search-input');
+        filter = input.value.toLowerCase();
+        buttons = document.getElementsByClassName('accordion');
+        panels = document.getElementsByClassName('panel');
+
+        for (i = 0; i < buttons.length; i++) {
+            if (buttons[i].textContent.toLowerCase().includes(filter)) {
+                buttons[i].style.display = "";
+                panels[i].style.display = "";
+            } else {
+                buttons[i].style.display = "none";
+                panels[i].style.display = "none";
+            }
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+        var backToTop = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTop.style.display = "block";
+        } else {
+            backToTop.style.display = "none";
+        }
+    };
+
+    function showSection(section) {
+        // Implement navigation logic here
+        alert(`Show section: ${section}`);
+    }
+</script>
+
+</body>
+</html>
