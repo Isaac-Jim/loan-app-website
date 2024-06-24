@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006400; /* Deep green */
+    padding: 10px 0;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lowkeylogo {
+    height: 20px;
+    width: 20px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #00FF00; /* Bright green */
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(178, 172, 172, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #006400; /* Green color for the heading */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #006400; /* Green background for the left side */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-details h3 {
+    margin-top: 0;
+    color: #00FF00; /* Lighter green for the subheading */
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item img {
+    width: 40px; /* Increase icon size */
+    height: 40px; /* Maintain aspect ratio */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-item a {
+    display: block;
+    color: white; /* White color for links */
+    text-decoration: none;
+    margin: 5px 0;
+}
+.social-icons {
+    background-color: #e0e0e0; /* Light grey as an example */
+    /* Other styling properties */
+}
+
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333; /* Dark text for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #006400; /* Green border on focus */
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #006400; /* Green button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00FF00; /* Lighter green on hover */
+}
+
+footer {
+    text-align: center;
+    background-color: #006400; /* Deep green */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer p {
+    margin: 0;
+}
