@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("aboutmoney.jpg"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #006400; /* Deep green */
+    padding: 10px 0;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .lowkeylogo {
+    height: 20px;
+    width: 20px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header ul li {
+    margin: 0 15px;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent; /* Add a subtle underline effect */
+  }
+  
+  header ul li a:hover {
+    color: #00FF00; /* Bright green */
+    border-bottom: 2px solid #00FF00; /* Change the underline color on hover */
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold; /* Make the heading bold */
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .stat {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Add a subtle white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .stat h2 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make the heading bold */
+  }
+  
+  .stat p {
+    font-size: 1em;
+    margin-bottom: 10px; /* Add some space between the heading and paragraph */
+  }
+  footer {
+    text-align: center;
+    background-color: #006400; /* Deep green */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

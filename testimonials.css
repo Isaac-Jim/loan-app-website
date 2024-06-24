@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+header {
+    background-color: #006400;
+    padding: 10px 0;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lowkeylogo {
+    height: 40px;
+    width: 40px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #00FF00;
+}
+
+main {
+    flex: 1; /* Takes remaining vertical space */
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Changed to white */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+main {
+    flex: 1; /* Takes remaining vertical space */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Changed to white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff; /* Changed to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 20px;
+}
+
+.text {
+    text-align: left;
+    max-width: 600px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.text h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #006400; /* Changed to green */
+}
+
+footer {
+    background-color: #333; /* Changed to black */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}

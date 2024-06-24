@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("home\ page\ background\ image.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Add this to fix the header to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Add this to ensure the header is on top of other elements */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.hero-card {
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.hero-card h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}

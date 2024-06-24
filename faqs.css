@@ -18,12 +18,12 @@ header nav {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px
+    padding: 0 20px;
 }
 
-.lowkeylogo{
-    height: 40px;
-    width: 70px;
+.lowkeylogo {
+    height: 20px;
+    width: 20px;
     margin-left: 0;
     margin-right: auto;
 }
