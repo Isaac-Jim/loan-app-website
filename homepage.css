@@ -1,81 +1,156 @@
-body {
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url("home\ page\ background\ image.jpg"); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background-color: #258128;
+    color: whitesmoke;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Add this to fix the header to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; /* Add this to ensure the header is on top of other elements */
+    border-bottom: 3px solid #1b5c1f;
 }
 
-nav {
+.logo-title {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    gap: 15px;
 }
 
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-}
-
-nav a:hover {
-    color: #ccc;
-}
-
-.logo {
-    margin-left: 20px;
-}
-
-.logo img {
-    width: 100px;
-}
-
-.hero-card {
-    background-color: #4CAF50;
-    padding: 20px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
     color: white;
+    font-weight: bold;
 }
 
-.hero-card h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+nav ul li a:hover {
+    color: bisque;
 }
 
-.hero-card p {
-    font-size: 1.2em;
-    line-height: 1.5;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for spacing */
+}
+
+.hero-image {
+    background: url('homep.avif') no-repeat center center;
+    background-size: cover;
+    height: 80vh; /* Adjusted height for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.welcome-message {
+    color: white;
+    padding: 30px; /* Increased padding for better readability */
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.welcome-message h2 {
+    font-size: 36px; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.welcome-message p {
+    font-size: 18px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+.learn-more-button {
+    background-color: #18f750;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better clickability */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px; /* Increased margin for better spacing */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #16d8be;
+}
+
+footer {
+    background-color: #258128;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero-image {
+        height: 60vh; /* Adjusted height for smaller screens */
+    }
+
+    .welcome-message {
+        padding: 20px; /* Adjusted padding for smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .welcome-message h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .welcome-message p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-image {
+        height: 50vh; /* Further adjusted height for smaller screens */
+    }
+
+    .welcome-message {
+        padding: 15px; /* Further adjusted padding for smaller screens */
+    }
+
+    .welcome-message h2 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .welcome-message p {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .learn-more-button {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
 }
