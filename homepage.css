@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #258128;
+    color: whitesmoke;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #1b5c1f;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: 110px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: large;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: bisque;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for spacing */
+}
+
+.hero-image {
+    background: url('welcpic.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh; /* Adjusted height for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.welcome-message {
+    color: white;
+    padding: 30px; /* Increased padding for better readability */
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.welcome-message h2 {
+    font-size: 36px; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    color:white;
+}
+
+.welcome-message p {
+    font-size: 24px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    color:white 
+}
+
+.learn-more-button {
+    background-color: #18f750;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better clickability */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px; /* Increased margin for better spacing */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #16d8be;
+}
+
+footer {
+    text-align: center;
+    background-color: #006400; /* Deep green */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero-image {
+        height: 60vh; /* Adjusted height for smaller screens */
+    }
+
+    .welcome-message {
+        padding: 20px; /* Adjusted padding for smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .welcome-message h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .welcome-message p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-image {
+        height: 50vh; /* Further adjusted height for smaller screens */
+    }
+
+    .welcome-message {
+        padding: 15px; /* Further adjusted padding for smaller screens */
+    }
+
+    .welcome-message h2 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .welcome-message p {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .learn-more-button {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}

@@ -1,61 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #006400; /* Deep green */
-    padding: 10px 0;
-    color: white;
+    background-color: #258128;
+    color: whitesmoke;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #1b5c1f;
 }
 
-header nav {
+.logo-title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px
 }
 
-.lowkeylogo{
-    height: 40px;
-    width: 70px;
-    margin-left: 0;
-    margin-right: auto;
+.logo {
+    height: 60px;
+    width: 110px;
+    margin-right: 20px;
 }
 
-header ul {
+nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 15px;
+    font-size: large;
 }
 
-header ul li {
-    margin: 0 15px;
-}
-
-header ul li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+    color: white;
+    font-weight: bold;
 }
 
-header ul li a:hover {
-    color: #00FF00; /* Bright green */
-}
-
+nav ul li a:hover {
+    color: bisque;
 header h1 {
     text-align: center;
     color: #0a0b0a; /* Black*/
     margin: 10px 0;
 }
-
+}
 footer {
     text-align: center;
     background-color: #006400; /* Deep green */
